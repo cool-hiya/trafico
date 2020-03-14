@@ -1,0 +1,18 @@
+include ../mixins/mixins
+
+doctype html
+html( lang="en" )
+head
+  meta( charset="UTF-8" )
+  meta( name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" )
+  title Trafico
+  link( rel="stylesheet" href="css/style.min.css" )
+body
+  include loader
+  .page
+    include header
+    main.page__content
+      block content
+    include footer
+
+  script( src="js/script.min.js" )

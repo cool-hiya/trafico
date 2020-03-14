@@ -1,0 +1,6 @@
+mixin quote(text, mod, className)
+  -
+    var className = className ? ' ' + className : '';
+    var mod = mod ? ' quote--' + mod : '';
+
+  q(class="quote" + className + mod) #{text}

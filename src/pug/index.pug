@@ -1,0 +1,28 @@
+extends blocks/layout
+
+block content
+  section.promo
+    .promo__content
+      h1 Your awesome traffic permit consultant.
+      include blocks/get-started-button
+  section.about-us(data-id="#about")
+    h2 About us
+    p The occupational traffic permit is one of the most important things in the company when carrying out freight transport. In fact, it is a prerequisite for doing business traffic at all.
+    +quote("How do you do when you need to obtain a commercial traffic permit for freight transport to your business?", "accent")
+    img(src="/img/content/about-us.svg")
+  section.how-to(data-id="#how-to")
+    h2 How to apply
+    p When applying for a traffic permit, there are certain requirements that you must meet that are included in the examination: requirements for professional knowledge, solid establishment, good reputation and financial resources. Important to remember is to confirm your application for a traffic permit by the company's company signer or CEO.
+    img(src="/img/content/how-to-apply.svg")
+  section.faq(data-id="#faq")
+    h2 Faq
+    p Questions and Answers on Professional Traffic Permits:
+    include blocks/faq-list
+    img(src="/img/content/faq.svg")
+  section.feedback
+    h2 Clients about us
+    p Out Awesome Clients
+    include blocks/feedback-slider
+  section.contacts(data-id="#contact-us")
+    include blocks/contacts-form
+    +quote('We provide traffic management consultants so you get started quickly, contact us for a quote today!')

@@ -1,0 +1,16 @@
+.promo {
+  background: url("/img/content/main-bg.svg") no-repeat top center;
+  min-height: 1000px;
+  margin-top: -50px;
+
+  &__content {
+    @include centerer;
+    padding-top: 100px;
+    color: $text-light;
+
+    h1 {
+      width: 100%;
+      max-width: 740px;
+    }
+  }
+}

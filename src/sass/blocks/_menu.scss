@@ -1,0 +1,25 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include centerer;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    height: 50px;
+
+    @include reset-list;
+  }
+
+  &__item {
+    &--active {
+      color: blue;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}

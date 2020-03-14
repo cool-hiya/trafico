@@ -1,0 +1,4 @@
+mixin svg(id, width, height, className)
+  - var className = className || '';
+  svg(width=('' + width) height=('' + height) aria-hidden='true' class=className).svg-icon
+    use(xlink:href=('img/sprite.svg#' + id))

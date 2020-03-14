@@ -1,0 +1,7 @@
+include ../data/clients
+
+.feedback-slider.swiper-container
+  .swiper-wrapper
+    each client in clients
+      .swiper-slide
+        +feedback(client)

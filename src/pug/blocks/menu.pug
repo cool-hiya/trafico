@@ -1,0 +1,9 @@
+include ../data/menu
+
+.menu
+  +svg('logo', '212', '50')
+  nav
+    ul.menu__list
+      each link, index in menu
+        li.menu__item
+          a(href=link.href) #{link.name}

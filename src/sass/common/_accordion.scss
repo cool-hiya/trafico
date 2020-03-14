@@ -1,0 +1,8 @@
+.acc {
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+
+    @include transition(max-height);
+  }
+}

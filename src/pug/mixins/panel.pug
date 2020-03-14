@@ -1,0 +1,8 @@
+mixin panel(header, content, mod, className)
+  -
+    var className = className ? ' ' + className : '';
+    var mod = mod ? ' panel--' + mod : '';
+
+  .panel(class="panel" + className + mod)
+    button.panel__toggle #{header}
+    p.panel__content #{content}

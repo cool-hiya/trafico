@@ -1,0 +1,15 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border-radius: 5px;
+  outline: 0;
+  font-weight: 700;
+  border: 0;
+  padding: 0;
+
+  &--primary {
+    background-color: $primary;
+  }
+}
