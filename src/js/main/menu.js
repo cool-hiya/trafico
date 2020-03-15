@@ -14,7 +14,7 @@ if (menuLinks) {
 
   anchorMenu.update();
 
-  window.onhashchange = anchorMenu.update;
+  window.onhashchange = function () {anchorMenu.update()};
   window.onscroll = onWindowScroll;
 }
 
