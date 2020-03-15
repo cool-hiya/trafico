@@ -33,6 +33,8 @@ export default class Accordion {
     if (this._activeIndex !== index) {
       this._activeIndex = index;
       this.show(this._activeIndex);
+    } else {
+      this._activeIndex = null;
     }
   }
 
