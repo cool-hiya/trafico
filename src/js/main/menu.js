@@ -1,4 +1,3 @@
-import {urlChanged} from '../utils/url-change';
 import {throttle} from '../utils/throttle';
 import Viewport from '../utils/viewport';
 import AnchorMenu from '../utils/anchor-menu';
@@ -13,11 +12,9 @@ if (menuLinks) {
 
   const onWindowScroll = throttle(updateMenu);
 
-  urlChanged
-    .then(() => {
-      anchorMenu.update();
-    });
+  anchorMenu.update();
 
+  window.onhashchange = anchorMenu.update;
   window.onscroll = onWindowScroll;
 }
 
