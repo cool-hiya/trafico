@@ -1,6 +1,6 @@
 .promo {
-  background: url("/img/content/main-bg.svg") no-repeat top center;
-  min-height: 1000px;
+  background: url("/img/content/truck.svg") no-repeat left -40px bottom 10px, url("/img/content/main-bg.svg") no-repeat top center;
+  min-height: 1200px;
   margin-top: -50px;
 
   &__content {
@@ -11,6 +11,8 @@
     h1 {
       width: 100%;
       max-width: 740px;
+      margin-top: 150px;
+      margin-bottom: 80px;
     }
   }
 }

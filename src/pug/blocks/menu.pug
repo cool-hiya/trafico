@@ -5,5 +5,6 @@ include ../data/menu
   nav
     ul.menu__list
       each link, index in menu
+        - var lastLinkClass = (index === menu.length - 1) ? 'button button--primary' : '';
         li.menu__item
-          a(href=link.href) #{link.name}
+          a(class=lastLinkClass href=link.href) #{link.name}

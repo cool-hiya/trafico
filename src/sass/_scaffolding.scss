@@ -14,4 +14,8 @@ body {
   margin: 0;
   font-family: $base-font;
   overflow-y: scroll;
+  height: 100%;
+  font-size: 18px;
+  background: $bg-gradient no-repeat;
+  background-attachment: fixed;
 }

@@ -20,6 +20,9 @@
 @import 'common/text';
 @import 'common/button';
 @import 'common/accordion';
+@import 'common/scroll';
+@import 'common/quote';
+@import 'common/panel';
 
 /* Blocks */
 @import 'blocks/footer';
@@ -28,3 +31,6 @@
 @import 'blocks/page';
 @import 'blocks/promo';
 @import 'blocks/page-header';
+@import 'blocks/about-us';
+@import 'blocks/how-to';
+@import 'blocks/faq';

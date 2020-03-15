@@ -1,0 +1,14 @@
+.panel {
+  &__toggle {
+    @include reset-button;
+
+    font-weight: 500;
+    font-size: 18px;
+    font-size: inherit;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+}

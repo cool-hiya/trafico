@@ -14,12 +14,16 @@
   }
 
   &__item {
-    &--active {
-      color: blue;
-    }
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $text-light;
+    margin-left: 90px;
 
     a {
       color: inherit;
+      font-weight: 700;
+
+      @include reset-link;
     }
   }
 }

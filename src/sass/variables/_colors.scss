@@ -1,9 +1,12 @@
 $white: #ffffff;
 $coral: #ee4d47;
-$pearl: #FEF8F5;
-$dark-blue: #0F264C;
+$pearl: #fef8f5;
+$dark-blue: #0f264c;
+$peach: #f49284;
 
 $primary: $coral;
 $secondary: $dark-blue;
 $base: $pearl;
 $text-light: $white;
+
+$bg-gradient: linear-gradient(139deg, $coral 0%, $peach 76%);
