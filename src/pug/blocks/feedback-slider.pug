@@ -1,7 +1,9 @@
-include ../data/clients
-
 .feedback-slider.swiper-container
   .swiper-wrapper
-    each client in clients
-      .swiper-slide
-        +feedback(client)
+
+template#feedback
+  .swiper-slide
+    .card.feedback
+      p.feedback__text
+      p.feedback__client
+      img.feedback__img(src="#" alt="")

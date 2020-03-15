@@ -83,7 +83,7 @@ gulp.task('scripts', function () {
   return browserify({
     entries: 'src/js/script.js'
     })
-    .transform(babelify, {presets: ['@babel/env']})
+    .transform(babelify)
     .bundle()
     .pipe(source('script.js'))
     .pipe(rename({suffix: '.min'}))
