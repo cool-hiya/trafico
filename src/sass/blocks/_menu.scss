@@ -8,7 +8,6 @@
   &__list {
     display: flex;
     align-items: center;
-    height: 50px;
 
     @include reset-list;
   }
